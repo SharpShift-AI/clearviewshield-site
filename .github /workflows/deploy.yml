@@ -1,17 +1,9 @@
-name: Deploy to cPanel
+name: Test Workflow
 on:
-  - push
-  - workflow_dispatch  # Add this line
+  push:
+  workflow_dispatch:
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: FTP Sync
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./clearviewshield/
-          server-dir: /public_html/wp-content/themes/clearviewshield/
+      - run: echo "This is a test workflow"
