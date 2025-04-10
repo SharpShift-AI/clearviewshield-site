@@ -1,0 +1,1059 @@
+/*
+Theme Name: ClearViewShield
+Theme URI: https://clearviewshield.com
+Description: Astra Child Theme for ClearViewShield Mobile Windshield Repair
+Author: Manus AI
+Author URI: https://clearviewshield.com
+Template: astra
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: clearviewshield
+*/
+
+/* Import parent theme styles */
+@import url('../astra/style.css');
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Color Variables */
+:root {
+    --light-blue: #7FB2CC;
+    --medium-blue: #4C7FB2;
+    --gray: #7F7F7F;
+    --dark-gray: #333333;
+    --light-gray: #F5F5F5;
+    --white: #FFFFFF;
+    --black: #000000;
+    --success-green: #4CAF50;
+    --warning-orange: #FF9800;
+    --error-red: #F44336;
+}
+
+/* Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-gray);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Michroma', sans-serif;
+    color: var(--medium-blue);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Links */
+a {
+    color: var(--medium-blue);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--light-blue);
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn, 
+.elementor-button,
+.wp-block-button__link,
+button,
+input[type="button"],
+input[type="submit"] {
+    background-color: var(--medium-blue);
+    color: var(--white);
+    font-family: 'Michroma', sans-serif;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover, 
+.elementor-button:hover,
+.wp-block-button__link:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: var(--light-blue);
+    color: var(--white);
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+    background-color: var(--gray);
+}
+
+.btn-secondary:hover {
+    background-color: var(--dark-gray);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--medium-blue);
+    color: var(--medium-blue);
+}
+
+.btn-outline:hover {
+    background-color: var(--medium-blue);
+    color: var(--white);
+}
+
+.btn-cta {
+    background-color: var(--success-green);
+    font-size: 1.1rem;
+    padding: 15px 30px;
+}
+
+.btn-cta:hover {
+    background-color: #3d8b40;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-logo img {
+    max-height: 60px;
+    width: auto;
+}
+
+.main-navigation {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.main-navigation a {
+    color: var(--dark-gray);
+    padding: 10px 15px;
+}
+
+.main-navigation a:hover {
+    color: var(--medium-blue);
+}
+
+.main-navigation .current-menu-item > a {
+    color: var(--medium-blue);
+    font-weight: 600;
+}
+
+.menu-button a {
+    background-color: var(--medium-blue);
+    color: var(--white) !important;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+.menu-button a:hover {
+    background-color: var(--light-blue);
+    color: var(--white) !important;
+    text-decoration: none;
+}
+
+/* Adjust header layout and spacing */
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-branding {
+    flex: 0 0 auto;
+}
+
+.main-navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation .primary-menu-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation ul.primary-menu {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Add consistent spacing between items */
+}
+
+.main-navigation ul.primary-menu li {
+    white-space: nowrap; /* Prevent text from wrapping within items */
+}
+
+/* Adjust menu for mobile */
+@media (max-width: 768px) {
+    .main-navigation ul.primary-menu {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items on mobile */
+        gap: 10px; /* Reduce gap on mobile */
+    }
+}
+
+.header-buttons {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primary, .btn-outline-primary {
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+/* Ensure menu is horizontal on desktop */
+@media (min-width: 769px) {
+    .main-navigation ul#primary-menu {
+        flex-direction: row;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/windshield-pattern.png');
+    background-size: cover;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.hero-cta {
+    margin-top: 2rem;
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.service-card {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: var(--medium-blue);
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    color: var(--gray);
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.about-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    padding: 30px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: var(--medium-blue);
+    color: var(--white);
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: var(--dark-gray);
+}
+
+.testimonial-content {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--medium-blue);
+}
+
+.testimonial-rating {
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+/* Booking Section */
+.booking-section {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.booking-form {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: var(--medium-blue);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 127, 178, 0.2);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background-color: var(--medium-blue);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.cta-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 60px 0 30px;
+}
+
+.footer-widget-title {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-widget ul li {
+    margin-bottom: 10px;
+}
+
+.footer-widget a {
+    color: var(--light-gray);
+}
+
+.footer-widget a:hover {
+    color: var(--light-blue);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--light-gray);
+}
+
+/* Blog */
+.blog-post {
+    margin-bottom: 40px;
+}
+
+.blog-post-title {
+    font-size: 1.8rem;
+}
+
+.blog-post-meta {
+    color: var(--gray);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.blog-post-excerpt {
+    margin-bottom: 20px;
+}
+
+.blog-post-thumbnail {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--light-gray);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.sidebar-widget {
+    margin-bottom: 40px;
+}
+
+.sidebar-widget-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-blue);
+}
+
+/* Pricing Box */
+.pricing-box {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.pricing-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.pricing-price {
+    font-size: 3rem;
+    color: var(--medium-blue);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Before/After Slider */
+.before-after-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.before-image,
+.after-image {
+    width: 100%;
+    height: auto;
+}
+
+.slider-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--white);
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: ew-resize;
+    z-index: 10;
+}
+
+.slider-handle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.slider-handle::after {
+    content: '↔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--medium-blue);
+    font-size: 1.2rem;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .service-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .services-section,
+    .about-section,
+    .testimonials-section,
+    .booking-section,
+    .cta-section {
+        padding: 50px 0;
+    }
+    
+    .about-image {
+        margin-bottom: 30px;
+    }
+    
+    .booking-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .btn, 
+    .elementor-button,
+    button,
+    input[type="button"],
+    input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .pricing-price {
+        font-size: 2.5rem;
+    }
+}
+
+/* Elementor Overrides */
+.elementor-section {
+    padding: 80px 0;
+}
+
+.elementor-widget-heading .elementor-heading-title {
+    font-family: 'Michroma', sans-serif;
+    color: var(--medium-blue);
+}
+
+.elementor-icon {
+    color: var(--medium-blue) !important;
+}
+
+.elementor-icon:hover {
+    color: var(--light-blue) !important;
+}
+
+/* Bookly Plugin Customization */
+.bookly-form {
+    font-family: 'Inter', sans-serif;
+}
+
+.bookly-form .bookly-btn {
+    background-color: var(--medium-blue);
+    border-radius: 4px;
+    font-family: 'Michroma', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bookly-form .bookly-btn:hover {
+    background-color: var(--light-blue);
+}
+
+.bookly-form .bookly-progress-tracker {
+    display: none !important;
+}
+
+/* WPForms Customization */
+.wpforms-container {
+    margin-bottom: 0 !important;
+}
+
+.wpforms-field-label {
+    font-weight: 500 !important;
+}
+
+.wpforms-field-sublabel {
+    color: var(--gray) !important;
+}
+
+.wpforms-field input[type="text"],
+.wpforms-field input[type="email"],
+.wpforms-field input[type="tel"],
+.wpforms-field textarea,
+.wpforms-field select {
+    padding: 12px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 1rem !important;
+}
+
+.wpforms-field input[type="text"]:focus,
+.wpforms-field input[type="email"]:focus,
+.wpforms-field input[type="tel"]:focus,
+.wpforms-field textarea:focus,
+.wpforms-field select:focus {
+    border-color: var(--medium-blue) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(76, 127, 178, 0.2) !important;
+}
+
+.wpforms-submit {
+    background-color: var(--medium-blue) !important;
+    color: var(--white) !important;
+    font-family: 'Michroma', sans-serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+.wpforms-submit:hover {
+    background-color: var(--light-blue) !important;
+}
+
+/* Custom Classes */
+.price-tag {
+    display: inline-block;
+    background-color: var(--success-green);
+    color: var(--white);
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.highlight-box {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.highlight-box h3 {
+    color: var(--white);
+}
+
+.service-area-list {
+    columns: 2;
+    column-gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.service-area-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.service-area-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--medium-blue);
+    font-weight: bold;
+}
+
+.warranty-badge {
+    display: inline-block;
+    background-color: var(--medium-blue);
+    color: var(--white);
+    font-family: 'Michroma', sans-serif;
+    font-size: 1rem;
+    padding: 15px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.warranty-badge span {
+    display: block;
+}
+
+.warranty-badge .warranty-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.warranty-badge .warranty-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Adjust header layout and spacing */
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-branding {
+    flex: 0 0 auto;
+}
+
+.main-navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation .primary-menu-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation ul.primary-menu {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal layout */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation ul.primary-menu li {
+    margin: 0 15px;
+}
+
+.header-buttons {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row; /* Place buttons side by side */
+    gap: 10px;
+    align-items: center; /* Vertically center buttons */
+}
+
+.btn-primary, .btn-outline-primary {
+    display: flex;
+    flex-direction: column; /* Stack text inside buttons */
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal; /* Allow text to wrap */
+    min-width: 120px; /* Ensure buttons have a minimum width */
+}
+
+/* Ensure menu is horizontal on desktop */
+@media (min-width: 769px) {
+    .main-navigation ul.primary-menu {
+        flex-direction: row;
+    }
+}
+
+/* Hamburger menu styling */
+.hamburger-toggle {
+    display: none; /* Hidden by default on desktop */
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #000;
+    margin: 5px 0;
+}
+
+/* Show hamburger and adjust menu on mobile */
+@media (max-width: 768px) {
+    .hamburger-toggle {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    .main-navigation .primary-menu-container {
+        display: none; /* Hide menu by default on mobile */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .main-navigation .primary-menu-container.active {
+        display: block; /* Show menu when hamburger is clicked */
+    }
+
+    .main-navigation ul.primary-menu {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .main-navigation ul.primary-menu li {
+        margin: 0;
+    }
+}
+
+.vehicle-form-container, .bookly-form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.custom-vehicle-form .form-group {
+    margin-bottom: 15px;
+}
+.custom-vehicle-form label {
+    font-family: 'Michroma', sans-serif;
+    color: #4C7FB2;
+    margin-bottom: 5px;
+    display: block;
+}
+.custom-vehicle-form input, .custom-vehicle-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+}
+.custom-vehicle-form button {
+    background: #4C7FB2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Michroma', sans-serif;
+    text-transform: uppercase;
+}
+.custom-vehicle-form button:hover {
+    background: #7FB2CC;
+}
+.alert-danger {
+    background: #F44336;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.vehicle-booking-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.booking-step {
+    transition: all 0.3s ease;
+}
+.bookly-form {
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+}
+.bookly-form h2,
+.bookly-form h3,
+.bookly-form label {
+    font-family: 'Michroma', sans-serif !important;
+    color: #4C7FB2 !important;
+}
+.bookly-form input,
+.bookly-form select,
+.bookly-form textarea {
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    padding: 10px !important;
+    font-family: 'Inter', sans-serif !important;
+}
+.bookly-form .bookly-btn {
+    background: #4C7FB2 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 10px 20px !important;
+    font-family: 'Michroma', sans-serif !important;
+    text-transform: uppercase !important;
+}
+
+/* Removed redundant .bookly-progress-tracker styles */

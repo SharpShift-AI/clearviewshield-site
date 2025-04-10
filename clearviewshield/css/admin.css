@@ -1,0 +1,291 @@
+/**
+ * Admin styles for ClearViewShield theme
+ *
+ * This file contains styles for the WordPress admin area
+ */
+
+/* Admin Menu Customization */
+#adminmenu .wp-menu-image img {
+    padding: 5px 0 0 0;
+    opacity: 1;
+}
+
+#adminmenu .toplevel_page_clearviewshield .wp-menu-image {
+    background-color: #4C7FB2;
+    border-radius: 3px;
+    margin: 5px 0 0 5px;
+}
+
+/* Dashboard Widgets */
+#dashboard-widgets .clearviewshield-dashboard-widget .inside {
+    padding: 0;
+    margin: 0;
+}
+
+.clearviewshield-dashboard-widget .dashboard-widget-content {
+    padding: 12px;
+}
+
+.clearviewshield-dashboard-widget .dashboard-widget-title {
+    background-color: #4C7FB2;
+    color: #fff;
+    padding: 10px 12px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.clearviewshield-dashboard-widget .dashboard-widget-footer {
+    background-color: #f8f8f8;
+    padding: 10px 12px;
+    border-top: 1px solid #eee;
+}
+
+/* Theme Options Page */
+.clearviewshield-admin-header {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clearviewshield-admin-header .clearviewshield-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.clearviewshield-admin-header .clearviewshield-version {
+    background-color: #4C7FB2;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.clearviewshield-admin-tabs {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.clearviewshield-admin-tabs .nav-tab {
+    margin-left: 0;
+    margin-right: 0.5em;
+}
+
+.clearviewshield-admin-tabs .nav-tab-active {
+    background-color: #4C7FB2;
+    color: #fff;
+    border-color: #4C7FB2;
+}
+
+.clearviewshield-admin-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.clearviewshield-admin-section {
+    margin-bottom: 30px;
+}
+
+.clearviewshield-admin-section h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+    color: #4C7FB2;
+}
+
+/* Form Elements */
+.clearviewshield-form-table {
+    margin-top: 0;
+}
+
+.clearviewshield-form-table th {
+    padding-left: 0;
+}
+
+.clearviewshield-color-picker .wp-color-result {
+    margin-bottom: 0;
+}
+
+.clearviewshield-admin-content input[type="text"],
+.clearviewshield-admin-content input[type="email"],
+.clearviewshield-admin-content input[type="url"],
+.clearviewshield-admin-content input[type="password"],
+.clearviewshield-admin-content input[type="number"],
+.clearviewshield-admin-content textarea,
+.clearviewshield-admin-content select {
+    width: 100%;
+    max-width: 400px;
+}
+
+.clearviewshield-admin-content .button-primary {
+    background-color: #4C7FB2;
+    border-color: #4C7FB2;
+    box-shadow: 0 1px 0 #3a6a9a;
+    text-shadow: 0 -1px 1px #3a6a9a, 1px 0 1px #3a6a9a, 0 1px 1px #3a6a9a, -1px 0 1px #3a6a9a;
+}
+
+.clearviewshield-admin-content .button-primary:hover,
+.clearviewshield-admin-content .button-primary:focus {
+    background-color: #3a6a9a;
+    border-color: #3a6a9a;
+}
+
+.clearviewshield-admin-content .button-secondary {
+    color: #4C7FB2;
+    border-color: #4C7FB2;
+}
+
+.clearviewshield-admin-content .button-secondary:hover,
+.clearviewshield-admin-content .button-secondary:focus {
+    color: #3a6a9a;
+    border-color: #3a6a9a;
+}
+
+/* Admin Notices */
+.clearviewshield-admin-notice {
+    background-color: #fff;
+    border-left: 4px solid #4C7FB2;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 5px 0 15px;
+    padding: 1px 12px;
+}
+
+.clearviewshield-admin-notice.success {
+    border-left-color: #46b450;
+}
+
+.clearviewshield-admin-notice.error {
+    border-left-color: #dc3232;
+}
+
+.clearviewshield-admin-notice.warning {
+    border-left-color: #ffb900;
+}
+
+.clearviewshield-admin-notice.info {
+    border-left-color: #00a0d2;
+}
+
+/* Elementor Editor */
+.elementor-panel .elementor-tab-control-clearviewshield a:before {
+    content: "\e902";
+    font-family: eicons;
+    color: #4C7FB2;
+}
+
+.elementor-control-clearviewshield_section {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.elementor-panel .elementor-control-clearviewshield_primary_color .elementor-control-title,
+.elementor-panel .elementor-control-clearviewshield_secondary_color .elementor-control-title,
+.elementor-panel .elementor-control-clearviewshield_accent_color .elementor-control-title {
+    font-weight: 600;
+}
+
+/* Bookly Integration */
+.bookly-form .bookly-btn {
+    background-color: #4C7FB2 !important;
+    border-color: #4C7FB2 !important;
+}
+
+.bookly-form .bookly-btn:hover {
+    background-color: #3a6a9a !important;
+    border-color: #3a6a9a !important;
+}
+
+.bookly-progress-tracker > .active {
+    background-color: #4C7FB2 !important;
+}
+
+/* WP Rocket Integration */
+.wpr-Content .wpr-Button--primary {
+    background-color: #4C7FB2;
+}
+
+.wpr-Content .wpr-Button--primary:hover,
+.wpr-Content .wpr-Button--primary:focus {
+    background-color: #3a6a9a;
+}
+
+/* Wordfence Integration */
+.wf-btn-primary {
+    background-color: #4C7FB2 !important;
+    border-color: #4C7FB2 !important;
+}
+
+.wf-btn-primary:hover,
+.wf-btn-primary:focus {
+    background-color: #3a6a9a !important;
+    border-color: #3a6a9a !important;
+}
+
+/* Yoast SEO Integration */
+.yoast-seo-score-icon.good {
+    background-color: #4C7FB2 !important;
+}
+
+/* Media Uploader */
+.media-frame-content .attachments-browser .attachments .attachment .thumbnail {
+    border-radius: 3px;
+}
+
+.media-frame-content .attachments-browser .attachments .attachment.selected .thumbnail {
+    border-color: #4C7FB2;
+}
+
+.media-frame-toolbar .media-toolbar-primary .button-primary {
+    background-color: #4C7FB2;
+    border-color: #4C7FB2;
+    box-shadow: 0 1px 0 #3a6a9a;
+    text-shadow: 0 -1px 1px #3a6a9a, 1px 0 1px #3a6a9a, 0 1px 1px #3a6a9a, -1px 0 1px #3a6a9a;
+}
+
+.media-frame-toolbar .media-toolbar-primary .button-primary:hover,
+.media-frame-toolbar .media-toolbar-primary .button-primary:focus {
+    background-color: #3a6a9a;
+    border-color: #3a6a9a;
+}
+
+/* Gutenberg Editor */
+.editor-styles-wrapper .wp-block-button__link {
+    background-color: #4C7FB2;
+}
+
+.editor-styles-wrapper .wp-block-button__link:hover,
+.editor-styles-wrapper .wp-block-button__link:focus {
+    background-color: #3a6a9a;
+}
+
+.editor-styles-wrapper .wp-block-quote {
+    border-left-color: #4C7FB2;
+}
+
+.editor-styles-wrapper .wp-block-pullquote {
+    border-color: #4C7FB2;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .clearviewshield-admin-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .clearviewshield-admin-header .clearviewshield-version {
+        margin-top: 10px;
+    }
+    
+    .clearviewshield-form-table th {
+        padding-bottom: 0;
+    }
+}

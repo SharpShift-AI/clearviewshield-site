@@ -1,0 +1,197 @@
+/**
+ * Login styles for ClearViewShield theme
+ *
+ * This file contains styles for the WordPress login page
+ */
+
+/* Background */
+body.login {
+    background-color: #f8f8f8;
+    background-image: linear-gradient(135deg, #f8f8f8 0%, #e8f0f5 100%);
+}
+
+/* Logo */
+.login h1 a {
+    background-image: url('../images/logo.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 80px;
+    padding: 0;
+    margin: 0 auto 25px;
+}
+
+/* Login Form */
+#login {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.login form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 26px 24px 34px;
+    border: none;
+}
+
+.login label {
+    color: #4C7FB2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login form .input,
+.login input[type="text"],
+.login input[type="password"] {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.login form .input:focus,
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+    border-color: #4C7FB2;
+    box-shadow: 0 0 0 1px #4C7FB2;
+    outline: none;
+}
+
+/* Submit Button */
+.login .button-primary {
+    background-color: #4C7FB2;
+    border-color: #4C7FB2;
+    box-shadow: 0 1px 0 #3a6a9a;
+    text-shadow: 0 -1px 1px #3a6a9a, 1px 0 1px #3a6a9a, 0 1px 1px #3a6a9a, -1px 0 1px #3a6a9a;
+    float: right;
+    height: auto;
+    line-height: 1;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.login .button-primary:hover,
+.login .button-primary:focus {
+    background-color: #3a6a9a;
+    border-color: #3a6a9a;
+}
+
+/* Remember Me Checkbox */
+.login .forgetmenot {
+    float: left;
+    margin-top: 10px;
+}
+
+.login .forgetmenot label {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Links */
+.login #nav,
+.login #backtoblog {
+    text-align: center;
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.login #nav a,
+.login #backtoblog a {
+    color: #4C7FB2;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login #nav a:hover,
+.login #backtoblog a:hover,
+.login #nav a:focus,
+.login #backtoblog a:focus {
+    color: #3a6a9a;
+    text-decoration: underline;
+}
+
+/* Error Messages */
+.login #login_error,
+.login .message,
+.login .success {
+    border-left: 4px solid #4C7FB2;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.login #login_error {
+    border-left-color: #dc3232;
+}
+
+.login .success {
+    border-left-color: #46b450;
+}
+
+/* Password Strength Meter */
+.login .pw-weak {
+    margin-bottom: 15px;
+}
+
+.login .indicator-hint {
+    color: #666;
+    font-size: 13px;
+}
+
+/* Privacy Policy */
+.login .privacy-policy-page-link {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.login .privacy-policy-page-link a {
+    color: #7F7F7F;
+    font-size: 12px;
+}
+
+/* Language Switcher */
+.login .language-switcher {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    #login {
+        width: 90%;
+    }
+    
+    .login h1 a {
+        width: 100%;
+    }
+    
+    .login form {
+        padding: 20px 15px;
+    }
+    
+    .login .button-primary {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .login .forgetmenot {
+        float: none;
+        margin-bottom: 15px;
+    }
+}

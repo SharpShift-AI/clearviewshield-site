@@ -1,0 +1,1547 @@
+{
+    "version": "0.4",
+    "title": "ClearViewShield Homepage",
+    "type": "page",
+    "content": [
+        {
+            "id": "hero-section",
+            "type": "section",
+            "settings": {
+                "layout": "full_width",
+                "height": "min-height: 80vh",
+                "background_background": "classic",
+                "background_image": {
+                    "url": "https://example.com/wp-content/uploads/2023/windshield-repair-hero.jpg",
+                    "id": 123
+                },
+                "background_position": "center center",
+                "background_size": "cover",
+                "background_overlay_background": "classic",
+                "background_overlay_color": "#000000",
+                "background_overlay_opacity": {
+                    "size": 0.5
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "100",
+                    "right": "0",
+                    "bottom": "100",
+                    "left": "0",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "hero-container",
+                    "type": "container",
+                    "settings": {
+                        "content_width": {
+                            "unit": "px",
+                            "size": 1200
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "hero-content",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 100
+                            },
+                            "elements": [
+                                {
+                                    "id": "hero-heading",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Mobile Windshield Repair",
+                                        "align": "center",
+                                        "title_color": "#ffffff",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 48
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "hero-subheading",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "We come to you in Cedar Rapids and surrounding areas",
+                                        "align": "center",
+                                        "title_color": "#ffffff",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Roboto",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 24
+                                        },
+                                        "typography_font_weight": "400"
+                                    }
+                                },
+                                {
+                                    "id": "hero-price",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "$75 Flat Rate Repairs",
+                                        "align": "center",
+                                        "title_color": "#7FB2CC",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 36
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "hero-buttons",
+                                    "type": "section",
+                                    "settings": {
+                                        "structure": "20"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "button-column-1",
+                                            "type": "column",
+                                            "settings": {
+                                                "_column_size": 50,
+                                                "_inline_size": null
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "book-now-button",
+                                                    "type": "widget",
+                                                    "widgetType": "button",
+                                                    "settings": {
+                                                        "text": "Book Now",
+                                                        "align": "center",
+                                                        "button_text_color": "#ffffff",
+                                                        "background_color": "#4C7FB2",
+                                                        "hover_color": "#ffffff",
+                                                        "button_background_hover_color": "#7FB2CC",
+                                                        "button_text_size": {
+                                                            "unit": "px",
+                                                            "size": 18
+                                                        },
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "5",
+                                                            "right": "5",
+                                                            "bottom": "5",
+                                                            "left": "5"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "15",
+                                                            "right": "30",
+                                                            "bottom": "15",
+                                                            "left": "30"
+                                                        },
+                                                        "link": {
+                                                            "url": "/booking/",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "button-column-2",
+                                            "type": "column",
+                                            "settings": {
+                                                "_column_size": 50,
+                                                "_inline_size": null
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "call-now-button",
+                                                    "type": "widget",
+                                                    "widgetType": "button",
+                                                    "settings": {
+                                                        "text": "Call Now: 319-775-0717",
+                                                        "align": "center",
+                                                        "button_text_color": "#4C7FB2",
+                                                        "background_color": "#ffffff",
+                                                        "hover_color": "#ffffff",
+                                                        "button_background_hover_color": "#4C7FB2",
+                                                        "button_text_size": {
+                                                            "unit": "px",
+                                                            "size": 18
+                                                        },
+                                                        "border_radius": {
+                                                            "unit": "px",
+                                                            "top": "5",
+                                                            "right": "5",
+                                                            "bottom": "5",
+                                                            "left": "5"
+                                                        },
+                                                        "text_padding": {
+                                                            "unit": "px",
+                                                            "top": "15",
+                                                            "right": "30",
+                                                            "bottom": "15",
+                                                            "left": "30"
+                                                        },
+                                                        "link": {
+                                                            "url": "tel:3197750717",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "services-section",
+            "type": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20"
+                },
+                "background_background": "classic",
+                "background_color": "#f8f8f8"
+            },
+            "elements": [
+                {
+                    "id": "services-container",
+                    "type": "container",
+                    "settings": {},
+                    "elements": [
+                        {
+                            "id": "services-heading-column",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 100
+                            },
+                            "elements": [
+                                {
+                                    "id": "services-heading",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Our Services",
+                                        "align": "center",
+                                        "title_color": "#4C7FB2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 36
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "services-description",
+                                    "type": "widget",
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>We provide professional mobile windshield repair services throughout Cedar Rapids, Marion, Hiawatha, and Linn County. Our technicians come to your location to fix chips, cracks, and stars in your windshield.</p>",
+                                        "align": "center",
+                                        "text_color": "#7F7F7F",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Roboto",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "typography_font_weight": "400"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "services-cards",
+                    "type": "section",
+                    "settings": {
+                        "structure": "30",
+                        "margin": {
+                            "unit": "px",
+                            "top": "40",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0"
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "service-column-1",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 33,
+                                "_inline_size": null,
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "service-card-1",
+                                    "type": "widget",
+                                    "widgetType": "clearviewshield_service_card",
+                                    "settings": {
+                                        "title": "Chip Repair",
+                                        "description": "Professional repair for rock chips and small impacts. Our advanced resin technology restores your windshield's integrity.",
+                                        "icon": {
+                                            "value": "fas fa-bullseye",
+                                            "library": "solid"
+                                        },
+                                        "price": "75",
+                                        "show_price": "yes",
+                                        "button_text": "Book Repair",
+                                        "link": {
+                                            "url": "/booking/",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "service-column-2",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 33,
+                                "_inline_size": null,
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "service-card-2",
+                                    "type": "widget",
+                                    "widgetType": "clearviewshield_service_card",
+                                    "settings": {
+                                        "title": "Crack Repair",
+                                        "description": "We can repair cracks up to 6 inches long. Our mobile service comes to your location for convenient, quality repairs.",
+                                        "icon": {
+                                            "value": "fas fa-bolt",
+                                            "library": "solid"
+                                        },
+                                        "price": "75",
+                                        "show_price": "yes",
+                                        "button_text": "Book Repair",
+                                        "link": {
+                                            "url": "/booking/",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "service-column-3",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 33,
+                                "_inline_size": null,
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "service-card-3",
+                                    "type": "widget",
+                                    "widgetType": "clearviewshield_service_card",
+                                    "settings": {
+                                        "title": "Star Break Repair",
+                                        "description": "Star breaks and combination breaks can be repaired quickly and effectively. Prevent further damage with our mobile service.",
+                                        "icon": {
+                                            "value": "fas fa-star",
+                                            "library": "solid"
+                                        },
+                                        "price": "75",
+                                        "show_price": "yes",
+                                        "button_text": "Book Repair",
+                                        "link": {
+                                            "url": "/booking/",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "process-section",
+            "type": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20"
+                },
+                "background_background": "classic",
+                "background_color": "#ffffff"
+            },
+            "elements": [
+                {
+                    "id": "process-container",
+                    "type": "container",
+                    "settings": {},
+                    "elements": [
+                        {
+                            "id": "process-heading-column",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 100
+                            },
+                            "elements": [
+                                {
+                                    "id": "process-heading",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "How It Works",
+                                        "align": "center",
+                                        "title_color": "#4C7FB2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 36
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "process-description",
+                                    "type": "widget",
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>Our mobile windshield repair process is quick, convenient, and effective. Here's how we get your windshield back to perfect condition.</p>",
+                                        "align": "center",
+                                        "text_color": "#7F7F7F",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Roboto",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "typography_font_weight": "400"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "process-steps",
+                    "type": "section",
+                    "settings": {
+                        "structure": "40",
+                        "margin": {
+                            "unit": "px",
+                            "top": "40",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0"
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "step-column-1",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 25,
+                                "_inline_size": null,
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "step-1-icon",
+                                    "type": "widget",
+                                    "widgetType": "icon",
+                                    "settings": {
+                                        "icon": {
+                                            "value": "fas fa-calendar-alt",
+                                            "library": "solid"
+                                        },
+                                        "view": "stacked",
+                                        "size": {
+                                            "unit": "px",
+                                            "size": 50
+                                        },
+                                        "primary_color": "#ffffff",
+                                        "secondary_color": "#4C7FB2",
+                                        "align": "center"
+                                    }
+                                },
+                                {
+                                    "id": "step-1-title",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "1. Book Online",
+                                        "align": "center",
+                                        "title_color": "#4C7FB2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "step-1-description",
+                                    "type": "widget",
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>Schedule your repair online or by phone. Choose a time and location that works for you.</p>",
+                                        "align": "center",
+                                        "text_color": "#7F7F7F",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Roboto",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "step-column-2",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 25,
+                                "_inline_size": null,
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "step-2-icon",
+                                    "type": "widget",
+                                    "widgetType": "icon",
+                                    "settings": {
+                                        "icon": {
+                                            "value": "fas fa-car",
+                                            "library": "solid"
+                                        },
+                                        "view": "stacked",
+                                        "size": {
+                                            "unit": "px",
+                                            "size": 50
+                                        },
+                                        "primary_color": "#ffffff",
+                                        "secondary_color": "#4C7FB2",
+                                        "align": "center"
+                                    }
+                                },
+                                {
+                                    "id": "step-2-title",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "2. We Come To You",
+                                        "align": "center",
+                                        "title_color": "#4C7FB2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "step-2-description",
+                                    "type": "widget",
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>Our mobile technician arrives at your location with all the necessary equipment to perform the repair.</p>",
+                                        "align": "center",
+                                        "text_color": "#7F7F7F",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Roboto",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "step-column-3",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 25,
+                                "_inline_size": null,
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "step-3-icon",
+                                    "type": "widget",
+                                    "widgetType": "icon",
+                                    "settings": {
+                                        "icon": {
+                                            "value": "fas fa-tools",
+                                            "library": "solid"
+                                        },
+                                        "view": "stacked",
+                                        "size": {
+                                            "unit": "px",
+                                            "size": 50
+                                        },
+                                        "primary_color": "#ffffff",
+                                        "secondary_color": "#4C7FB2",
+                                        "align": "center"
+                                    }
+                                },
+                                {
+                                    "id": "step-3-title",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "3. Quick Repair",
+                                        "align": "center",
+                                        "title_color": "#4C7FB2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "step-3-description",
+                                    "type": "widget",
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>We complete most repairs in 30-45 minutes using our advanced resin technology to restore your windshield.</p>",
+                                        "align": "center",
+                                        "text_color": "#7F7F7F",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Roboto",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "step-column-4",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 25,
+                                "_inline_size": null,
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "step-4-icon",
+                                    "type": "widget",
+                                    "widgetType": "icon",
+                                    "settings": {
+                                        "icon": {
+                                            "value": "fas fa-check-circle",
+                                            "library": "solid"
+                                        },
+                                        "view": "stacked",
+                                        "size": {
+                                            "unit": "px",
+                                            "size": 50
+                                        },
+                                        "primary_color": "#ffffff",
+                                        "secondary_color": "#4C7FB2",
+                                        "align": "center"
+                                    }
+                                },
+                                {
+                                    "id": "step-4-title",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "4. Good As New",
+                                        "align": "center",
+                                        "title_color": "#4C7FB2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 20
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "step-4-description",
+                                    "type": "widget",
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>Drive away with a repaired windshield that looks great and is structurally sound. All repairs are guaranteed.</p>",
+                                        "align": "center",
+                                        "text_color": "#7F7F7F",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Roboto",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "typography_font_weight": "400"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "before-after-section",
+            "type": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20"
+                },
+                "background_background": "classic",
+                "background_color": "#f8f8f8"
+            },
+            "elements": [
+                {
+                    "id": "before-after-container",
+                    "type": "container",
+                    "settings": {},
+                    "elements": [
+                        {
+                            "id": "before-after-heading-column",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 100
+                            },
+                            "elements": [
+                                {
+                                    "id": "before-after-heading",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Before & After",
+                                        "align": "center",
+                                        "title_color": "#4C7FB2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 36
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "before-after-description",
+                                    "type": "widget",
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>See the difference our professional windshield repair service makes. Slide to compare before and after results.</p>",
+                                        "align": "center",
+                                        "text_color": "#7F7F7F",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Roboto",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "typography_font_weight": "400"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "before-after-sliders",
+                    "type": "section",
+                    "settings": {
+                        "structure": "20",
+                        "margin": {
+                            "unit": "px",
+                            "top": "40",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0"
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "slider-column-1",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 50,
+                                "_inline_size": null,
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "before-after-slider-1",
+                                    "type": "widget",
+                                    "widgetType": "clearviewshield_before_after_slider",
+                                    "settings": {
+                                        "title": "Chip Repair",
+                                        "before_image": {
+                                            "url": "https://example.com/wp-content/uploads/2023/chip-before.jpg",
+                                            "id": 124
+                                        },
+                                        "after_image": {
+                                            "url": "https://example.com/wp-content/uploads/2023/chip-after.jpg",
+                                            "id": 125
+                                        },
+                                        "before_label": "Before",
+                                        "after_label": "After",
+                                        "initial_offset": {
+                                            "unit": "%",
+                                            "size": 50
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "slider-column-2",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 50,
+                                "_inline_size": null,
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "before-after-slider-2",
+                                    "type": "widget",
+                                    "widgetType": "clearviewshield_before_after_slider",
+                                    "settings": {
+                                        "title": "Crack Repair",
+                                        "before_image": {
+                                            "url": "https://example.com/wp-content/uploads/2023/crack-before.jpg",
+                                            "id": 126
+                                        },
+                                        "after_image": {
+                                            "url": "https://example.com/wp-content/uploads/2023/crack-after.jpg",
+                                            "id": 127
+                                        },
+                                        "before_label": "Before",
+                                        "after_label": "After",
+                                        "initial_offset": {
+                                            "unit": "%",
+                                            "size": 50
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "testimonials-section",
+            "type": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20"
+                },
+                "background_background": "classic",
+                "background_color": "#ffffff"
+            },
+            "elements": [
+                {
+                    "id": "testimonials-container",
+                    "type": "container",
+                    "settings": {},
+                    "elements": [
+                        {
+                            "id": "testimonials-heading-column",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 100
+                            },
+                            "elements": [
+                                {
+                                    "id": "testimonials-heading",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Customer Testimonials",
+                                        "align": "center",
+                                        "title_color": "#4C7FB2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 36
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "testimonials-description",
+                                    "type": "widget",
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>Don't just take our word for it. Here's what our customers have to say about our mobile windshield repair service.</p>",
+                                        "align": "center",
+                                        "text_color": "#7F7F7F",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Roboto",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "typography_font_weight": "400"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "testimonials-slider-section",
+                    "type": "section",
+                    "settings": {
+                        "margin": {
+                            "unit": "px",
+                            "top": "40",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0"
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "testimonials-slider-column",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 100
+                            },
+                            "elements": [
+                                {
+                                    "id": "testimonials-slider",
+                                    "type": "widget",
+                                    "widgetType": "clearviewshield_testimonial_slider",
+                                    "settings": {
+                                        "testimonials": [
+                                            {
+                                                "content": "I was amazed at how quickly and effectively they repaired the chip in my windshield. The technician was professional and the results were perfect!",
+                                                "author": "John Smith",
+                                                "location": "Cedar Rapids",
+                                                "rating": "5",
+                                                "image": {
+                                                    "url": "https://example.com/wp-content/uploads/2023/testimonial1.jpg",
+                                                    "id": 128
+                                                }
+                                            },
+                                            {
+                                                "content": "Great service at a fair price. They came to my workplace and fixed my windshield in less than an hour. Highly recommend!",
+                                                "author": "Jane Doe",
+                                                "location": "Marion",
+                                                "rating": "5",
+                                                "image": {
+                                                    "url": "https://example.com/wp-content/uploads/2023/testimonial2.jpg",
+                                                    "id": 129
+                                                }
+                                            },
+                                            {
+                                                "content": "I had a crack that I thought would require a full windshield replacement, but they were able to repair it perfectly. Saved me hundreds of dollars!",
+                                                "author": "Mike Johnson",
+                                                "location": "Hiawatha",
+                                                "rating": "4",
+                                                "image": {
+                                                    "url": "https://example.com/wp-content/uploads/2023/testimonial3.jpg",
+                                                    "id": 130
+                                                }
+                                            }
+                                        ],
+                                        "slides_to_show": "1",
+                                        "slides_to_scroll": "1",
+                                        "autoplay": "yes",
+                                        "autoplay_speed": 5000,
+                                        "infinite": "yes",
+                                        "arrows": "yes",
+                                        "dots": "yes",
+                                        "pause_on_hover": "yes",
+                                        "adaptive_height": "yes",
+                                        "tablet_slides_to_show": "1",
+                                        "mobile_slides_to_show": "1"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cta-section",
+            "type": "section",
+            "settings": {
+                "layout": "full_width",
+                "height": "min-height: 400px",
+                "background_background": "classic",
+                "background_image": {
+                    "url": "https://example.com/wp-content/uploads/2023/cta-background.jpg",
+                    "id": 131
+                },
+                "background_position": "center center",
+                "background_size": "cover",
+                "background_overlay_background": "classic",
+                "background_overlay_color": "#4C7FB2",
+                "background_overlay_opacity": {
+                    "size": 0.8
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20"
+                }
+            },
+            "elements": [
+                {
+                    "id": "cta-container",
+                    "type": "container",
+                    "settings": {
+                        "content_width": {
+                            "unit": "px",
+                            "size": 1200
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "cta-column",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 100
+                            },
+                            "elements": [
+                                {
+                                    "id": "cta-heading",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Ready to Fix That Windshield?",
+                                        "align": "center",
+                                        "title_color": "#ffffff",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 36
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "cta-description",
+                                    "type": "widget",
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>Book your mobile windshield repair today and we'll come to your location in Cedar Rapids, Marion, Hiawatha, or anywhere in Linn County.</p>",
+                                        "align": "center",
+                                        "text_color": "#ffffff",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Roboto",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "typography_font_weight": "400"
+                                    }
+                                },
+                                {
+                                    "id": "cta-price",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Only $75 Flat Rate",
+                                        "align": "center",
+                                        "title_color": "#ffffff",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 28
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "cta-button",
+                                    "type": "widget",
+                                    "widgetType": "button",
+                                    "settings": {
+                                        "text": "Book Your Repair Now",
+                                        "align": "center",
+                                        "button_text_color": "#4C7FB2",
+                                        "background_color": "#ffffff",
+                                        "hover_color": "#ffffff",
+                                        "button_background_hover_color": "#7FB2CC",
+                                        "button_text_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "border_radius": {
+                                            "unit": "px",
+                                            "top": "5",
+                                            "right": "5",
+                                            "bottom": "5",
+                                            "left": "5"
+                                        },
+                                        "text_padding": {
+                                            "unit": "px",
+                                            "top": "15",
+                                            "right": "30",
+                                            "bottom": "15",
+                                            "left": "30"
+                                        },
+                                        "link": {
+                                            "url": "/booking/",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "contact-section",
+            "type": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "20",
+                    "bottom": "80",
+                    "left": "20"
+                },
+                "background_background": "classic",
+                "background_color": "#f8f8f8"
+            },
+            "elements": [
+                {
+                    "id": "contact-container",
+                    "type": "container",
+                    "settings": {},
+                    "elements": [
+                        {
+                            "id": "contact-heading-column",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 100
+                            },
+                            "elements": [
+                                {
+                                    "id": "contact-heading",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Contact Us",
+                                        "align": "center",
+                                        "title_color": "#4C7FB2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 36
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "contact-description",
+                                    "type": "widget",
+                                    "widgetType": "text-editor",
+                                    "settings": {
+                                        "editor": "<p>Have questions about our mobile windshield repair service? Get in touch with us today.</p>",
+                                        "align": "center",
+                                        "text_color": "#7F7F7F",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Roboto",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "typography_font_weight": "400"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "contact-info-section",
+                    "type": "section",
+                    "settings": {
+                        "structure": "20",
+                        "margin": {
+                            "unit": "px",
+                            "top": "40",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0"
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "contact-info-column",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 50,
+                                "_inline_size": null,
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "contact-info-heading",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Get In Touch",
+                                        "title_color": "#4C7FB2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 24
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "contact-phone-icon",
+                                    "type": "widget",
+                                    "widgetType": "icon-box",
+                                    "settings": {
+                                        "icon": {
+                                            "value": "fas fa-phone-alt",
+                                            "library": "solid"
+                                        },
+                                        "title_text": "Phone",
+                                        "description_text": "319-775-0717",
+                                        "link": {
+                                            "url": "tel:3197750717",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        },
+                                        "icon_color": "#4C7FB2",
+                                        "title_color": "#4C7FB2",
+                                        "description_color": "#7F7F7F",
+                                        "icon_size": {
+                                            "unit": "px",
+                                            "size": 30
+                                        },
+                                        "title_typography_typography": "custom",
+                                        "title_typography_font_family": "Michroma",
+                                        "title_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "title_typography_font_weight": "600",
+                                        "description_typography_typography": "custom",
+                                        "description_typography_font_family": "Roboto",
+                                        "description_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "description_typography_font_weight": "400"
+                                    }
+                                },
+                                {
+                                    "id": "contact-email-icon",
+                                    "type": "widget",
+                                    "widgetType": "icon-box",
+                                    "settings": {
+                                        "icon": {
+                                            "value": "fas fa-envelope",
+                                            "library": "solid"
+                                        },
+                                        "title_text": "Email",
+                                        "description_text": "info@clearviewshield.com",
+                                        "link": {
+                                            "url": "mailto:info@clearviewshield.com",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        },
+                                        "icon_color": "#4C7FB2",
+                                        "title_color": "#4C7FB2",
+                                        "description_color": "#7F7F7F",
+                                        "icon_size": {
+                                            "unit": "px",
+                                            "size": 30
+                                        },
+                                        "title_typography_typography": "custom",
+                                        "title_typography_font_family": "Michroma",
+                                        "title_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "title_typography_font_weight": "600",
+                                        "description_typography_typography": "custom",
+                                        "description_typography_font_family": "Roboto",
+                                        "description_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "description_typography_font_weight": "400"
+                                    }
+                                },
+                                {
+                                    "id": "contact-hours-icon",
+                                    "type": "widget",
+                                    "widgetType": "icon-box",
+                                    "settings": {
+                                        "icon": {
+                                            "value": "fas fa-clock",
+                                            "library": "solid"
+                                        },
+                                        "title_text": "Hours",
+                                        "description_text": "Monday-Friday: 8am-6pm\nSaturday: 9am-4pm\nSunday: Closed",
+                                        "icon_color": "#4C7FB2",
+                                        "title_color": "#4C7FB2",
+                                        "description_color": "#7F7F7F",
+                                        "icon_size": {
+                                            "unit": "px",
+                                            "size": 30
+                                        },
+                                        "title_typography_typography": "custom",
+                                        "title_typography_font_family": "Michroma",
+                                        "title_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18
+                                        },
+                                        "title_typography_font_weight": "600",
+                                        "description_typography_typography": "custom",
+                                        "description_typography_font_family": "Roboto",
+                                        "description_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16
+                                        },
+                                        "description_typography_font_weight": "400"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "contact-form-column",
+                            "type": "column",
+                            "settings": {
+                                "_column_size": 50,
+                                "_inline_size": null,
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "contact-form-heading",
+                                    "type": "widget",
+                                    "widgetType": "heading",
+                                    "settings": {
+                                        "title": "Send Us a Message",
+                                        "title_color": "#4C7FB2",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Michroma",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 24
+                                        },
+                                        "typography_font_weight": "600"
+                                    }
+                                },
+                                {
+                                    "id": "contact-form",
+                                    "type": "widget",
+                                    "widgetType": "form",
+                                    "settings": {
+                                        "form_name": "Contact Form",
+                                        "form_fields": [
+                                            {
+                                                "field_type": "text",
+                                                "field_label": "Name",
+                                                "placeholder": "Your Name",
+                                                "required": "true",
+                                                "width": "100",
+                                                "_id": "name"
+                                            },
+                                            {
+                                                "field_type": "email",
+                                                "field_label": "Email",
+                                                "placeholder": "Your Email",
+                                                "required": "true",
+                                                "width": "100",
+                                                "_id": "email"
+                                            },
+                                            {
+                                                "field_type": "tel",
+                                                "field_label": "Phone",
+                                                "placeholder": "Your Phone",
+                                                "required": "true",
+                                                "width": "100",
+                                                "_id": "phone"
+                                            },
+                                            {
+                                                "field_type": "textarea",
+                                                "field_label": "Message",
+                                                "placeholder": "Your Message",
+                                                "required": "true",
+                                                "width": "100",
+                                                "_id": "message"
+                                            }
+                                        ],
+                                        "input_size": "md",
+                                        "show_labels": "",
+                                        "button_text": "Send Message",
+                                        "button_size": "md",
+                                        "button_width": "100",
+                                        "button_align": "center",
+                                        "button_text_color": "#ffffff",
+                                        "button_background_color": "#4C7FB2",
+                                        "button_hover_color": "#ffffff",
+                                        "button_hover_background_color": "#7FB2CC",
+                                        "button_border_radius": {
+                                            "unit": "px",
+                                            "top": "5",
+                                            "right": "5",
+                                            "bottom": "5",
+                                            "left": "5"
+                                        },
+                                        "email_to": "info@clearviewshield.com",
+                                        "email_subject": "New Contact Form Submission",
+                                        "email_content": "[all-fields]",
+                                        "success_message": "Your message has been sent successfully!",
+                                        "error_message": "There was an error submitting your form. Please try again."
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
