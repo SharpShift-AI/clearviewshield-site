@@ -1,5 +1,7 @@
 name: Deploy to cPanel
-on: [push]
+on:
+  - push
+  - workflow_dispatch  # Add this line
 jobs:
   deploy:
     runs-on: ubuntu-latest
