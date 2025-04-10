@@ -528,6 +528,7 @@ add_action('wp_ajax_nopriv_clearviewshield_check_availability', 'clearviewshield
  */
 add_action('wp_ajax_clearviewshield_book_appointment', 'clearviewshield_book_appointment');
 add_action('wp_ajax_nopriv_clearviewshield_book_appointment', 'clearviewshield_book_appointment');
+// Grok test: Workflow verification
 function clearviewshield_book_appointment() {
     error_log('Starting clearviewshield_book_appointment function');
     check_ajax_referer('clearviewshield_book_appointment_nonce', 'nonce');
