@@ -1,0 +1,9 @@
+name: Fresh Test Workflow
+on:
+  push
+  workflow_dispatch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is a fresh test workflow"
