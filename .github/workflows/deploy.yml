@@ -14,4 +14,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./clearviewshield/
-          server-dir: /public_html/wp-content/themes/clearviewshield/
+          server-dir: /clearviewshield.com/wp-content/themes/clearviewshield/
